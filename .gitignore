@@ -1,23 +1,75 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+# Environment
 .env
-.env.backup
+.env.local
 .env.production
-.phpactor.json
+.env.backup
+/auth.json
+
+# Dependencies
+/node_modules/
+/vendor/
+
+# Build & Compiled
+/build/
+/dist/
+/dist-ssr/
+/public/build/
+/public/hot/
+/bootstrap/ssr/
+
+# Laravel Storage & Cache
+/public/storage/
+/storage/*.key
+/storage/pail/
+/storage/postgres/
+/storage/minio/
+/.phpunit.cache
+
+# Testing
+/coverage/
+/.nyc_output/
 .phpunit.result.cache
+
+# Logs
+/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE & Editors
+/.vscode/
+!.vscode/extensions.json
+/.idea/
+/.fleet/
+/.nova/
+/.zed/
+.phpactor.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Laravel Homestead
 Homestead.json
 Homestead.yaml
-npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+
+# Prisma
+/prisma/migrations/*.sql
+
+# Laravel Wayfinder
+/resources/js/actions/
+/resources/js/routes/
+/resources/js/wayfinder/
+
+# Misc
+*.local
+*.bak
+*~*
